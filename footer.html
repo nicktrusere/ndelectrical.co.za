@@ -1,0 +1,382 @@
+<style>
+    /* Footer Styling */
+footer {
+    background-color: #111;
+    color: #eee;
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.footer-logo-col {
+    flex: 1 1 250px;
+}
+
+.footer-logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footer-company-name {
+    font-size: 20px;
+    margin: 10px 0 0;
+    color: #00AEEF;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-social {
+    margin-top: 15px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    color: #eee;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #00AEEF;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+}
+
+.footer-col-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #00AEEF;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a i {
+    margin-right: 5px;
+    color: #00AEEF;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #00AEEF;
+}
+
+.chatbot-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.chatbot-iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col,
+    .footer-logo-col {
+        text-align: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .chatbot-iframe {
+        height: 400px;
+    }
+}
+
+</style>
+<section class="services-section">
+    <div class="services-container">
+      <h2 class="section-title">
+        <span class="title-icon">⚡</span>
+        <span>Our Specialized Services</span>
+        <span class="title-icon">⚡</span>
+      </h2>
+      
+      <div class="services-grid">
+        <!-- Hazardous Locations -->
+        <div class="service-card hazardous">
+          <div class="service-logo-container">
+            <img src="images/hazardous.jpg" alt="Hazardous Locations" class="service-logo">
+            <div class="zoom-overlay">
+              <span>+</span>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Hazardous Locations</h3>
+            <ul class="service-features">
+              <li>HAZLOC Area Classifications</li>
+              <li>Gases/Dust/Petroleum Installations</li>
+              <li>Audits & Compliance</li>
+              <li>Thermal Scanning/Imaging</li>
+            </ul>
+            <a href="certified-electronics.html" class="service-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Medical Locations -->
+        <div class="service-card medical">
+          <div class="service-logo-container">
+            <img src="images/annahand.jpg" alt="Medical Locations" class="service-logo">
+            <div class="zoom-overlay">
+              <span>+</span>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Medical Locations</h3>
+            <ul class="service-features">
+              <li>Hospital Electrical Installations</li>
+              <li>ICU & Operating Theaters</li>
+              <li>Delivery Rooms & Isolocs</li>
+              <li>Medical Facility Solutions</li>
+            </ul>
+            <a href="medical-locations.html" class="service-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Solar Systems -->
+        <div class="service-card solar">
+          <div class="service-logo-container">
+            <img src="images/solar-green.jpg" alt="Solar Systems" class="service-logo">
+            <div class="zoom-overlay">
+              <span>+</span>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Solar Systems</h3>
+            <ul class="service-features">
+              <li>Solar Installations</li>
+              <li>Hybrid Systems</li>
+              <li>Energy Storage Solutions</li>
+              <li>Off-Grid & Grid-Tied</li>
+            </ul>
+            <a href="solar.html" class="service-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Security Systems -->
+        <div class="service-card security">
+          <div class="service-logo-container">
+            <img src="images/securitysystm.jpg" alt="Security Systems" class="service-logo">
+            <div class="zoom-overlay">
+              <span>+</span>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Security Systems</h3>
+            <ul class="service-features">
+              <li>Residential & Commercial</li>
+              <li>Electric Fence Installations</li>
+              <li>Access Control & CCTV</li>
+              <li>Perimeter Security</li>
+            </ul>
+            <a href="security--systems.html" class="service-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Gas Installations -->
+        <div class="service-card gas">
+          <div class="service-logo-container">
+            <img src="images/ND GAS INS.jpg" alt="Gas Installations" class="service-logo">
+            <div class="zoom-overlay">
+              <span>+</span>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Gas Installations</h3>
+            <ul class="service-features">
+              <li>Certified Installations</li>
+              <li>Pipeline Systems</li>
+              <li>Safety Inspections</li>
+              <li>Restaurant & Household</li>
+            </ul>
+            <a href="gas-installations.html" class="service-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Training & Certification -->
+        <div class="service-card training">
+          <div class="service-logo-container">
+            <img src="images/logo2.jpg" alt="Training & Certification" class="service-logo">
+            <div class="zoom-overlay">
+              <span>+</span>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Training & Certification</h3>
+            <ul class="service-features">
+              <li>Solar Installation Training</li>
+              <li>Assessor & Facilitator</li>
+              <li>Trade Test Unit Standards</li>
+              <li>Electrician Development</li>
+            </ul>
+            <a href="training.html" class="service-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<footer>
+    <div class="footer-container">
+      <!-- Logo and Social Media -->
+      <div class="footer-logo-col">
+        <img src="images/logo1.jpg" alt="ND Electrical Logo" class="footer-logo">
+        <h3 class="footer-company-name">ND-Electrical Services</h3>
+        <p class="footer-tagline">Engineering + Contractors</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=100083364459722" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="testing-commissioning.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="learnmore.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Profile</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Training</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Our Services -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="gas-installations.html"><i class="fas fa-chevron-right"></i> Gas Systems</a></li>
+          <li><a href="medical-locations.html"><i class="fas fa-chevron-right"></i> Hospital Installations</a></li>
+          <li><a href="solar.html"><i class="fas fa-chevron-right"></i> Solar Installations</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Fence Installations</a></li>
+          <li><a href="specialist-services.html"><i class="fas fa-chevron-right"></i> Hazardous Installations</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Prepaid Sub-Metering</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Us -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contact Us</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div>
+              <strong>Head Office:</strong><br>
+              Moreleta Park, Pretoria, 2000<br>
+              South Africa
+            </div>
+          </div>
+  
+          <div class="contact-item">
+            <i class="fas fa-phone-alt contact-icon"></i>
+            <div>
+              <strong>Phone:</strong><br>
+              +27 72 553 1168<br>
+              +27 74 521 4225 (Emergency)
+            </div>
+          </div>
+  
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div>
+              <strong>Email:</strong><br>
+              info@ndengineering.co.za<br>
+              support@ndengineering.co.za
+            </div>
+          </div>
+  
+          <div class="contact-item">
+            <i class="fas fa-clock contact-icon"></i>
+            <div>
+              <strong>Working Hours:</strong><br>
+              Mon–Fri: 08:00 – 17:00<br>
+              Sat: 08:00 – 13:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+      <iframe 
+        src="https://www.chatbase.co/chatbot-iframe/PVOjbzSH8IPBuLmB_dYlh" 
+        frameborder="0"
+        class="chatbot-iframe"
+        title="ND Electrical Chatbot"
+      ></iframe>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="copyright">
+      &copy; 2025 ND Electrical Eng & Contractors (Pty) Ltd. All Rights Reserved.
+    </div>
+  </footer>
+  
